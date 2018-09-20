@@ -6,7 +6,7 @@
 /*   By: msukhare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/02 13:22:44 by msukhare          #+#    #+#             */
-/*   Updated: 2018/02/22 11:06:04 by msukhare         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:40:30 by kemar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	g_sig;
 
 void			ft_catchsig(int sig)
 {
-	sig = 0;
+	(void)sig;
 	ft_putstr("\n");
 	if (g_sig == 0)
 		ft_putloca(NULL, NULL);

@@ -6,7 +6,7 @@
 /*   By: msukhare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/02 13:25:11 by msukhare          #+#    #+#             */
-/*   Updated: 2018/02/23 12:57:13 by msukhare         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:41:15 by kemar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <signal.h>
+#include <sys/wait.h>
 
 typedef struct stat	t_stat;
 typedef struct		s_cmd
