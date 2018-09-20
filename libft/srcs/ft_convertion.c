@@ -6,7 +6,7 @@
 /*   By: msukhare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 16:27:11 by msukhare          #+#    #+#             */
-/*   Updated: 2018/01/31 16:14:41 by msukhare         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:46:53 by kemar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static char	*ft_get_convert_integ(va_list ap, t_flag *flag)
 	else if (flag->conv == 4)
 		p_var = ft_lltoa(va_arg(ap, long long int));
 	else if (flag->conv == 5)
-		p_var = ft_lltoa(va_arg(ap, intmax_t));
+		p_var = ft_lltoa(va_arg(ap, long long int));
 	else if (flag->conv == 6)
 		p_var = ft_lltoa((size_t)va_arg(ap, long long));
 	return (p_var);
@@ -58,7 +58,7 @@ static char	*ft_convertu(va_list ap, t_flag *flag)
 	else if (flag->conv == 4)
 		p_var = ft_ulltoa(va_arg(ap, unsigned long long int));
 	else if (flag->conv == 5)
-		p_var = ft_ulltoa(va_arg(ap, uintmax_t));
+		p_var = ft_ulltoa(va_arg(ap, unsigned long long int));
 	else if (flag->conv == 6)
 		p_var = ft_ulltoa((unsigned long long)va_arg(ap, unsigned long long));
 	return (p_var);
@@ -82,7 +82,7 @@ static char	*ft_converthexoct(va_list ap, t_flag *flag)
 		p_var = ft_ulltoa_base(va_arg(ap, unsigned long long int),\
 				flag->type);
 	else if (flag->conv == 5)
-		p_var = ft_ulltoa_base(va_arg(ap, uintmax_t), flag->type);
+		p_var = ft_ulltoa_base(va_arg(ap, unsigned long long), flag->type);
 	else if (flag->conv == 6)
 		p_var = ft_ulltoa_base((size_t)va_arg(ap, unsigned long long),\
 				flag->type);

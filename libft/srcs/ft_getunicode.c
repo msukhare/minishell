@@ -6,7 +6,7 @@
 /*   By: msukhare <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/25 14:48:56 by msukhare          #+#    #+#             */
-/*   Updated: 2018/01/31 16:15:42 by msukhare         ###   ########.fr       */
+/*   Updated: 2018/09/20 16:48:33 by kemar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char		*ft_get_charunic(wint_t c, t_flag *flag)
 {
 	char	*p_var;
 
-	if ((c >= 0xd800 && c <= 0xdfff) || c > 0x10FFFF || c < 0)
+	if ((c >= 0xd800 && c <= 0xdfff) || c > 0x10FFFF)
 		return (NULL);
-	if (c >= 0 && c <= 255)
+	if (c > 0 && c <= 255)
 	{
 		if (!(p_var = ft_getchar(c, flag)))
 			return (NULL);
