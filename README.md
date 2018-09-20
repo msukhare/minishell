@@ -8,7 +8,7 @@
 
 * minishell has 5 [built-in](https://en.wikipedia.org/wiki/Shell_builtin) [cd](http://linuxcommand.org/lc3_man_pages/cdh.html), [echo](https://linux.die.net/man/1/echo), [setenv](http://man7.org/linux/man-pages/man3/setenv.3.html), [unsetenv](https://linux.die.net/man/3/unsetenv), [env](https://linux.die.net/man/1/env). They are not in [posix norm](https://en.wikipedia.org/wiki/POSIX)
 
-* you can execute all binaries like in sh.
+* you can execute all binaries as in sh.
 
 ## What do you need to compile minishell ?
 
